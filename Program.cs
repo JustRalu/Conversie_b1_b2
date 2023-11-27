@@ -135,12 +135,15 @@ namespace Conversie_b1_b2
                         }
                     }
                     else
-                        Console.Write((int)Math.Truncate((double)d));
+                        Console.Write(Math.Truncate((double)d));
                     d = d % 1;
 
                 }
                 else///perioada
+                {
+                    Console.WriteLine($"({d}*{b2}) % 1 reprezinta inceput de perioada");
                     break;
+                }   
             }
 
         }
