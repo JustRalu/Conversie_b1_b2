@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -141,9 +141,10 @@ namespace Conversie_b1_b2
                 }
                 else///perioada
                 {
-                    Console.WriteLine($"({d}*{b2}) % 1 reprezinta inceput de perioada");
+                    Console.Write("    OBSERVATIE:");
+                    Console.WriteLine($"parte intreaga din {(d * b2) % 1}, ( Math.Truncate((double)(d*b2)%1)) ) reprezinta inceput de perioada");
                     break;
-                }   
+                }
             }
 
         }
