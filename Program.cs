@@ -98,7 +98,7 @@ namespace Conversie_b1_b2
 
             decimal d = new decimal(n);
 
-            while ((double)d - Math.Truncate((double)d) * 1.0 != 0.0)
+            while ((double)d - Math.Truncate((double)d) * 1.0 > 0.0)
             {
 
                 if (!nr.Contains(d))
