@@ -141,7 +141,7 @@ namespace Conversie_b1_b2
                 }
                 else///perioada
                 {
-                    Console.Write("    OBSERVATIE:");
+                    Console.WriteLine("OBSERVATIE:");
                     Console.WriteLine($"parte intreaga din {(d * b2) % 1}, ( Math.Truncate((double)(d*b2)%1)) ) reprezinta inceput de perioada");
                     break;
                 }
