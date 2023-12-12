@@ -22,11 +22,7 @@ namespace Conversie_b1_b2
             foreach (char c in number)
             {
                 int index = digits.IndexOf(c, 0, fromBase);
-                if (index == -1)
-                {
-                    throw new ArgumentException($"Numarul {number} invalid in baza {fromBase}");
-                }
-
+             
                 result = result + index * (int)Math.Pow(fromBase, len - 1);
                 len--;
             }
@@ -81,11 +77,7 @@ namespace Conversie_b1_b2
             foreach (char c in number)
             {
                 int index = digits.IndexOf(c, 0, fromBase);
-                if (index == -1)
-                {
-                    throw new ArgumentException($"Numarul {number} invalid in baza {fromBase}");
-                }
-
+               
                 result = result + index * Math.Pow(fromBase, len - 1);
 
                 len--;
